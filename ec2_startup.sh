@@ -1,8 +1,6 @@
 #!/bin/bash
-sudo yum update -y
-sudo yum install -y
-sudo yum install docker -y
-git clone https://github.com/SilverEngineered/deployment_template
+sudo apt update
+sudo apt install docker
 cd deployment_template
 sudo docker build -t dockerflask .
 sudo service docker start
